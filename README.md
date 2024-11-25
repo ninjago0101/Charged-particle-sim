@@ -6,6 +6,6 @@ to calculate the particle's acceleration and trajectory. Depending on the fields
 
 Run:
 Install Python 3 and Matplotlib: pip install matplotlib.
-DL the code 
-Run the script in a terminal
+DL the code. 
+Run the script in a terminal.
 enter the particle's charge, mass, position, velocity, and fields when prompted.
