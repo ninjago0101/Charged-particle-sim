@@ -44,15 +44,15 @@ def main():
         v0 = list(map(float, input("Enter the initial velocity (vx, vy, vz in m/s): ").split()))
         E = list(map(float, input("Enter the electric field (Ex, Ey, Ez in V/m): ").split()))
         B = list(map(float, input("Enter the magnetic field (Bx, By, Bz in Tesla): ").split()))
-        t_max = float(input("Enter the simulation duration (seconds): "))
-        dt = float(input("Enter the time step for the simulation (seconds): "))
+        t_max = float(input("Enter the simulation duration (s): "))
+        dt = float(input("Enter the time step for the simulation (s): "))
 
-        print("\nRunning the simulation... Please wait!")
+        print("\nRunning the simulation... ")
         r, t = simulate_particle_motion(q, m, np.array(r0), np.array(v0), np.array(E), np.array(B), t_max, dt)
         plot_trajectory(r, t)
 
     except ValueError:
-        print("Invalid input! Please enter numbers only.")
+        print(" Please enter numbers only.")
 
 if __name__ == "__main__":
     main()
